@@ -81,7 +81,7 @@ nav a:hover{
 .slides{
     display: flex;
     height: 100%;
-    animation: slide 15s infinite;
+    
 }
 
 .slide{
@@ -90,7 +90,7 @@ nav a:hover{
     position: relative;
     flex-shrink: 0;
 }
-}
+
 
 .slide img{
     width: 100%;
@@ -331,6 +331,8 @@ footer{
 }
 /* EFEITO SUAVE */
 
+
+}
 body::before{
     content: '';
     position: fixed;
@@ -356,8 +358,6 @@ body::after{
     right: -150px;
     filter: blur(120px);
     z-index: -1;
-}
-
 
 
 }
