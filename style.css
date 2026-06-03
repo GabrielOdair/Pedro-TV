@@ -21,7 +21,8 @@ header{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #6d28d9;
-    background-color: #0b1628;
+   background: rgba(0,0,0,0.4);
+backdrop-filter: blur(15px);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -190,9 +191,8 @@ nav a:hover{
 }
 
 .destaque{
-    background: linear-gradient(45deg, #7c3aed, #2563eb);
-    border: none;
-    box-shadow: 0 0 20px rgba(124, 58, 237, 0.4);
+    background:#e50914;
+    box-shadow:0 0 25px rgba(229,9,20,.4);
 }
 
 /* SECTIONS */
@@ -360,4 +360,42 @@ body::after{
     z-index: -1;
 
 
+}
+.catalogo{
+    padding: 40px 8%;
+}
+
+.catalogo-titulo{
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.catalogo-row{
+    display:flex;
+    gap:15px;
+    overflow-x:auto;
+    padding-bottom:15px;
+}
+
+.catalogo-row::-webkit-scrollbar{
+    height:8px;
+}
+
+.catalogo-row::-webkit-scrollbar-thumb{
+    background:#e50914;
+    border-radius:20px;
+}
+
+.catalogo-row img{
+    width:280px;
+    height:160px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.catalogo-row img:hover{
+    transform:scale(1.1);
+    z-index:10;
 }
